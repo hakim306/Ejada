@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-21T22:13:24 EET" name="Default suite" finished-at="2024-03-21T22:13:49 EET" duration-ms="25377">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.runner@72e5a8e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-03-21T22:13:24 EET" name="Default test" finished-at="2024-03-21T22:13:49 EET" duration-ms="25377">
+      <class name="Runner.runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.runner@72e5a8e]" started-at="2024-03-21T22:13:24 EET" name="setUpClass" finished-at="2024-03-21T22:13:24 EET" duration-ms="324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3d96fa9e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.runner@72e5a8e]" started-at="2024-03-21T22:13:24 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-21T22:13:24 EET" duration-ms="179" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check that buy product functionality working as expected."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Buy Product."]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "steps.Buy_ProductSteps.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "steps.Buy_ProductSteps.driver" is null
+at steps.Buy_ProductSteps.user_add_the_most_expensive_two_products_to_your_cart(Buy_ProductSteps.java:21)
+at ✽.user Add the most expensive two products to your cart(file:///C:/Users/mhakim/Desktop/study/cucumber/src/test/resources/Feature/BuyProduct.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.runner@72e5a8e]" started-at="2024-03-21T22:13:24 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-21T22:13:49 EET" duration-ms="24703" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with invalid credentials."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login functioanlity."]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.userName" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.userName" is null
+at Pages.HomePage.Enter_username(HomePage.java:33)
+at steps.loginSteps.enter_invalid_username(loginSteps.java:30)
+at ✽.enter invalid username "standard_user"(file:///C:/Users/mhakim/Desktop/study/cucumber/src/test/resources/Feature/login.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.runner@72e5a8e]" started-at="2024-03-21T22:13:49 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-21T22:13:49 EET" duration-ms="94" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid Credentials."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login functioanlity."]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.userName" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.userName" is null
+at Pages.HomePage.Enter_username(HomePage.java:33)
+at steps.loginSteps.user_enter_valid_username(loginSteps.java:51)
+at ✽.user enter valid username "standard_user"(file:///C:/Users/mhakim/Desktop/study/cucumber/src/test/resources/Feature/login.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.runner@72e5a8e]" started-at="2024-03-21T22:13:49 EET" name="tearDownClass" finished-at="2024-03-21T22:13:49 EET" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
